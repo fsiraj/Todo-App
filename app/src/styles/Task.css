@@ -1,0 +1,53 @@
+/* Filters to convert black to any colors: https://codepen.io/sosuke/pen/Pjoqqp */
+
+#mark-done-icon {
+    filter: invert(40%) sepia(35%) saturate(5567%) hue-rotate(97deg) brightness(104%) contrast(98%);
+    height: 32px;
+    width: 32px;
+}
+
+#reset-icon {
+    height: 26px;
+    width: 26px;
+}
+
+#delete-icon {
+    filter: invert(12%) sepia(89%) saturate(6383%) hue-rotate(356deg) brightness(94%) contrast(111%);
+    height: 26px;
+    width: 26px;
+}
+
+#edit-icon {
+    height: 26px;
+    width: 26px;
+}
+
+input {
+    width: 85%;
+    padding: 10px;
+    margin-left: -10px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+tr {
+    height: 60px;
+}
+
+tr.completed {
+    color: gray;
+}
+
+td.completed {
+    text-decoration: line-through;
+}
+
+td.datetime {
+    font-size: smaller;
+}
+
+td.button-cell {
+    height: 32px;
+    width: 32px;
+    padding: 0px;
+}

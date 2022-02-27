@@ -1,0 +1,46 @@
+#todolist {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 65%;
+    height:max-content;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+
+}
+
+#title {
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px
+}
+
+tr:hover {
+    background-color: azure;
+}
+
+.task-col {
+    width: 50%;
+}
+
+.date-col {
+    width: 15%;
+}
+
+.button-col {
+    width: 6.66%;
+}
