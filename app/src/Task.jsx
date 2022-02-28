@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/Task.css"
+
 import doneIcon from "./icons/Done.png"
 import resetIcon from "./icons/Reset.png"
 import deleteIcon from "./icons/Delete.png"

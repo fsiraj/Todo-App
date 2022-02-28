@@ -12,6 +12,7 @@ def get_db():
     return conn
 
 def row_factory(db_row):
+    "Parses one row of the database into a python dictionary."
     id, task, done, added, edited = db_row
     task_dict = {
         'id'    : id,

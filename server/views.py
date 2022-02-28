@@ -3,6 +3,7 @@ import tornado.web
 from model import get_db, row_factory
 
 class BaseHandler(tornado.web.RequestHandler):
+    """Base class with correct options set which other Handlers inherit from."""
     
     def options(self, *args, **kwargs):
         """
@@ -23,6 +24,7 @@ class BaseHandler(tornado.web.RequestHandler):
         This overrides CORS so that the UI is test-able
         NOTE: ONLY USE LOCALLY!
         """
+        # if running locally, disable CORS protections
         self.set_header("Access-Control-Allow-Origin", "*")
         self.set_header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS')
         self.set_header('Access-Control-Allow-Credentials', 'true')
@@ -94,7 +96,6 @@ class EditHandler(BaseHandler):
                 q = "UPDATE tasks SET task=%s, done=%s WHERE id=%s"
                 cur.execute(q, (newDesc, newStatus, id))
             conn.commit()
-
             with conn.cursor() as cur:
                 q = "SELECT * FROM tasks WHERE id=%s"
                 cur.execute(q, (id,))

@@ -3,7 +3,7 @@ import Task from './Task';
 import Form from './Form';
 import './styles/TodoList.css';
 
-class App extends React.Component {
+class TodoList extends React.Component {
   // Top-Level App
 
   constructor(props) {
@@ -140,4 +140,4 @@ class App extends React.Component {
 
 }
 
-export default App;
+export default TodoList;

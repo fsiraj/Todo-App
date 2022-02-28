@@ -9,10 +9,10 @@
 
  ### Backend
  To install requirements: `pip3 install -r server/requirements.txt`
- To run the tornado server: `python3 server/main.py`.
+ To run the tornado server: `python3 server/main.py`. It will be at `localhost:8888`.
 
 ### Frontend
 Be sure to be in the app directory: `cd app`.
 To install dependencies: `npm install`.
 To build the react app: `npm run build`.
-To serve the app, start the server with: `serve -s build`.
+To serve the app, start the server with: `serve -s build`. It will be at `localhost:3000`.
